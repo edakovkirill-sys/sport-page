@@ -1,0 +1,189 @@
+/* Загальні налаштування стилів */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0b0b0d;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 10px;
+}
+
+/* Контейнер, який імітує екран смартфона */
+.phone-container {
+    max-width: 430px;
+    width: 100%;
+    background: linear-gradient(180deg, #16161a 0%, #0f0f11 100%);
+    border: 1px solid #232329;
+    border-radius: 30px;
+    padding: 30px 20px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Аватарка */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar-wrapper {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #333; /*  фон, поки немає картинки */
+}
+
+/* Градієнтний текст  */
+.brand-title {
+    font-size: 26px;
+    font-weight: 800;
+    background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+}
+
+.fullname {
+    font-size: 14px;
+    color: #8e8e93;
+}
+
+/* Рядок з тегами країни та категорії */
+.tags-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.badge-turkey { background-color: rgba(231, 76, 60, 0.15); color: #ff7675; }
+.badge-clothing { background-color: rgba(46, 204, 113, 0.15); color: #2ecc71; }
+
+/* Список переваг */
+.features-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.feature-item {
+    font-size: 14px;
+    color: #e5e5ea;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 6px 16px;
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+}
+
+/*  (Локація, Час) */
+.info-grid {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.info-card {
+    flex: 1;
+    background: #1c1c1e;
+    border: 1px solid #2c2c2e;
+    border-radius: 16px;
+    padding: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.info-card.full-width {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.info-card .icon { font-size: 18px; margin-bottom: 2px; }
+.info-card .label { font-size: 10px; color: #8e8e93; font-weight: 700; letter-spacing: 1px; }
+.info-card .value { font-size: 14px; font-weight: 600; color: #ffffff; }
+
+/* Кнопки переходу в соцмережі */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 20px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s, filter 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.2);
+}
+
+.btn-text { font-size: 16px; font-weight: 700; }
+.btn-sub { font-size: 12px; opacity: 0.6; margin-top: 2px; }
+
+/* кольори кнопок */
+.btn-instagram { background: linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); }
+.btn-telegram { background: #229ed9; }
+.btn-viber { background: #7360f2; }
+.btn-threads { background: #000000; border: 1px solid #333; }
+.btn-call { background: #27ae60; }
+
+/* Підвал */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #636366;
+    margin-top: 10px;
+}
+/* <a href="tel:+380934556127" class="btn btn-call">
+                <span class="btn-text">Зателефонувати</span>
+                <span class="btn-sub">+38 066 958 54 39</span>
+            </a>
+            
+             <a href="" class="btn btn-viber">
+                <span class="btn-text">Viber</span>
+                <span class="btn-sub">066 958 54 39</span>
+            </a>
+            
+            
+            
+            */
